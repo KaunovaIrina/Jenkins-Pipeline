@@ -1,0 +1,12 @@
+# Инициализируем пустой Git-репозиторий
+mkdir my-project-pipeline && cd my-project-pipeline
+git init
+
+# Связываем удаленный репозиторий
+git remote add origin https://github.com/<your_username>/my-project-pipeline.git
+
+# Копируем файлы нашего проекта в репозиторий
+cp -r path/to/my/project/* .
+
+# Проверяем состояние
+git status
